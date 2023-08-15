@@ -3,7 +3,7 @@
 ###############################################################################
 
 FROM alpine:3.13.6
-ARG S3FS_VERSION=v1.90
+ARG S3FS_VERSION=v1.91
 COPY entrypoint.sh /
 
 RUN apk --update add bash fuse libcurl libxml2 libstdc++ libgcc alpine-sdk automake autoconf libxml2-dev fuse-dev curl-dev git mailcap; \
